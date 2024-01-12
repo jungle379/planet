@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "db:generate": "pnpm drizzle-kit generate:mysql --config drizzle.config.ts",
     "lint": "next lint"
   },
   "dependencies": {
