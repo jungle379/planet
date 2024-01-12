@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@planetscale/database": "^1.13.0",
     "drizzle-orm": "^0.29.3",
     "next": "14.0.4",
     "react": "^18",
@@ -20,6 +21,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "dotenv-cli": "^7.3.0",
     "drizzle-kit": "^0.20.10",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
