@@ -27,6 +27,7 @@ export default async function Home() {
                       <h1 className="text-sm font-bold mt-5">{post.title}</h1>
                       <ul>
                         <li>{post.content}</li>
+                        <li>{post.publishedAt.toLocaleString()}</li>
                       </ul>
                     </div>
                   ))}
