@@ -10,6 +10,7 @@
     "db:push": "pnpm with-env node -r esbuild-register src/db/migrate.ts",
     "with-env": "dotenv -e .env --",
     "db:select": "pnpm with-env node -r esbuild-register src/db/select.ts",
+    "db:seed": "pnpm with-env node -r esbuild-register src/db/seed.ts",
     "lint": "next lint"
   },
   "dependencies": {
