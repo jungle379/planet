@@ -77,16 +77,19 @@ async function main() {
     {
       title: "6月6日（山田太郎）",
       content: "Hello World",
+      publishedAt: new Date(),
       authorId: selecAllUsers[0].id,
     },
     {
       title: "6月7日（山田太郎）",
       content: "Hello Universe",
+      publishedAt: new Date(),
       authorId: selecAllUsers[0].id,
     },
     {
       title: "6月7日（田中花子）",
       content: "Hello",
+      publishedAt: new Date(),
       authorId: selecAllUsers[1].id,
     },
   ];
