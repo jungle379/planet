@@ -1,8 +1,8 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "b836f110-e1f5-4528-b533-1268125d837f",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "5a7bd4f1-972a-4fed-a951-2b7c3fcfdb09",
+  "prevId": "b836f110-e1f5-4528-b533-1268125d837f",
   "tables": {
     "posts": {
       "name": "posts",
@@ -27,6 +27,14 @@
           "primaryKey": false,
           "notNull": true,
           "autoincrement": false
+        },
+        "published_at": {
+          "name": "published_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "(now())"
         },
         "author_id": {
           "name": "author_id",

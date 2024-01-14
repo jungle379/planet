@@ -6,12 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "db:generate": "pnpm drizzle-kit generate:mysql --config drizzle.config.ts",
     "db:push": "pnpm with-env node -r esbuild-register src/db/migrate.ts",
     "with-env": "dotenv -e .env --",
     "db:select": "pnpm with-env node -r esbuild-register src/db/select.ts",
     "db:seed": "pnpm with-env node -r esbuild-register src/db/seed.ts",
-    "lint": "next lint"
+    "db:drop": "drizzle-kit drop --config drizzle.config.ts"
   },
   "dependencies": {
     "@planetscale/database": "^1.13.0",

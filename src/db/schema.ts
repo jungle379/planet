@@ -1,4 +1,11 @@
-import { mysqlTable, serial, text, int, index } from "drizzle-orm/mysql-core";
+import {
+  mysqlTable,
+  serial,
+  text,
+  int,
+  index,
+  timestamp,
+} from "drizzle-orm/mysql-core";
 import { InferModel, relations } from "drizzle-orm";
 
 export const users = mysqlTable("users", {
@@ -13,6 +20,7 @@ export const posts = mysqlTable(
     id: serial("id").primaryKey(),
     title: text("title").notNull(),
     content: text("content").notNull(),
+    publishedAt: timestamp("published_at").defaultNow().notNull(),
     authorId: int("author_id").notNull(),
   },
   (table) => ({
