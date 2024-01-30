@@ -6,7 +6,8 @@ import {
   index,
   timestamp,
 } from "drizzle-orm/mysql-core";
-import { InferModel, relations } from "drizzle-orm";
+import { relations } from "drizzle-orm/relations";
+import { InferModel } from "drizzle-orm/table";
 
 export const users = mysqlTable("users", {
   id: serial("id").primaryKey(),
