@@ -11,7 +11,7 @@ export async function ServerComponent() {
       <div className="grid grid-cols-2 gap-x-5 gap-y-5 my-5 mx-auto max-w-2xl">
         {(await users).map((user, index) => (
           <div key={user.id} className="bg-blue-100 rounded-md p-5">
-            <h1 className="text-lg font-bold">{user.name}</h1>
+            <h1 className="text-lg font-bold">投稿者名:{user.name}</h1>
             <ul>
               <li>{user.email}</li>
             </ul>

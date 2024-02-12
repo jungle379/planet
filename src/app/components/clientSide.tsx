@@ -1,9 +1,11 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export const ClientComponent = () => {
   const [test, setTest] = useState();
+  const pathname = usePathname();
   const test1 = () => {
     console.log("OK!");
   };
@@ -13,7 +15,7 @@ export const ClientComponent = () => {
   }, [test]);
   return (
     <div className="p-8">
-      <h1>トップページ</h1>
+      {pathname == "/" ? <h1>トップページ</h1> : <h1></h1>}
       <button onClick={test1}>テスト</button>
     </div>
   );
