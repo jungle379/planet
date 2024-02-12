@@ -9,10 +9,11 @@ export const ClientComponent = () => {
   const test1 = () => {
     console.log("OK!");
   };
+
   useEffect(() => {
     if (!test1) return;
     console.log("msg");
-  }, [test]);
+  }, [setTest]);
   return (
     <div className="p-8">
       {pathname == "/" ? <h1>トップページ</h1> : <h1></h1>}

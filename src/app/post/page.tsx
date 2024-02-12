@@ -10,7 +10,6 @@ export default async function Home() {
       <div>
         <ClientComponent />
         <Link href="/">Homeへ</Link>
-        <ServerComponent />
       </div>
     </>
   );
